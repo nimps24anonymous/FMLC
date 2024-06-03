@@ -1,6 +1,6 @@
 >📋  A template README.md for code accompanying a Machine Learning paper
 
-# My Paper Title
+# Fast Meta Labels Correction through Bilevel Optimization
 
 This repository is the official implementation of [My Paper Title](https://arxiv.org/abs/2030.12345). 
 
@@ -21,7 +21,7 @@ pip install -r requirements.txt
 To train the model(s) in the paper, run this command:
 
 ```train
-python train.py --input-data <path_to_data> --alpha 10 --beta 20
+python train_clothing1M.py --data-path <path_to_data> 
 ```
 
 >📋  Describe how to train the models, with example commands on how to train the models in your paper, including the full training procedure and appropriate hyperparameters.
