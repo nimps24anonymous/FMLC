@@ -29,8 +29,6 @@ Cifar
 python train_clothing1M.py --dataset <'cifar10', 'cifar100'>  --corruption-type <'unif', 'flip'> --corruption-level <0.2, 0.4>
 ```
 
->📋  Describe how to train the models, with example commands on how to train the models in your paper, including the full training procedure and appropriate hyperparameters.
-
 <!--## Evaluation
 
 To evaluate my model on ImageNet, run:
