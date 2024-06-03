@@ -19,7 +19,7 @@ def prepare_clothing1m_data(args):
         transforms.ToTensor(),
         transforms.Normalize(norm_mean, norm_std)])
 
-    train_data_gold = torchvision.datasets.ImageFolder(args.data_path + 'clean_train', transform=transform_train)
+    train_data_gold = torchvision.datasets.ImageFolder(args.data_path + '/clean_train', transform=transform_train)
     train_data_silver = torchvision.datasets.ImageFolder(args.data_path + '/noisy_train', transform=transform_train)
     test_data = torchvision.datasets.ImageFolder(args.data_path + '/clean_test', transform=transform_val)
     batch_size = args.batch_size
@@ -33,4 +33,3 @@ def prepare_clothing1m_data(args):
                                               num_workers=args.num_workers, pin_memory=True)
 
     return train_gold_loader, train_silver_loader, test_loader
-

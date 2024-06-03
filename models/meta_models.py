@@ -16,7 +16,7 @@ class MetaNet(nn.Module):
 
         # nn.init.xavier_uniform_(self.pseudo_labels[-1].weight)
         nn.init.xavier_uniform_(self.cls_emb.weight)
-        # self.weight.bias.data = 10 * torch.ones(1)
+        self.weight.bias.data = -1 * 10 * torch.ones(1)
 
     def forward(self, features, labels):
         labels = self.cls_emb(labels)
