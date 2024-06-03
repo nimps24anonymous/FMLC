@@ -20,9 +20,13 @@ pip install -r requirements.txt
 
 To train the model(s) in the paper, run this command:
 
-```train
+clothing1M
+```train 
 python train_clothing1M.py --data-path <path_to_data>
-python train_clothing1M.py --data-path <path_to_data>  --corruption-type <'unif', 'flip'> --corruption-level <0.2, 0.4>
+```
+Cifar
+```train CIFAR
+python train_clothing1M.py --dataset <'cifar10', 'cifar100'>  --corruption-type <'unif', 'flip'> --corruption-level <0.2, 0.4>
 ```
 
 >📋  Describe how to train the models, with example commands on how to train the models in your paper, including the full training procedure and appropriate hyperparameters.
